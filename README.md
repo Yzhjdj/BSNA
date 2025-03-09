@@ -14,26 +14,14 @@ You can directly run the JAR file using the following commands:
 
 To solve a single problem instance, use the following command format:
 
-`java -jar 'path_to_jar_file' 'problem_n.txt_folder_path' 'output_folder_path' 'runtime' 'num_threads' '1(default)' 'parameter_b_value' 'minFillRate' 'n'`
+`java -jar 'path_to_jar_file' 'problem_n.txt_folder_path' 'output_folder_path' 'n' 'parameter_a_value' 'runtime'`
 
 #### Example:
-`java -jar C:\out\artifacts\BSGT_jar\BSPA.jar C:\dataset\C C:\outcome 30 16 1 0.1 1 21`
+`java -jar C:\out\artifacts\BSNA_jar\BSNA.jar C:\dataset\C C:\outcome 81 0.7 30`
 
-This will solve the problem defined in `problem21.txt` located in the `C:\dataset\C` directory. The results will be saved in the `C:\outcome` folder. The algorithm will run for 30 seconds, using 16 parallel threads, with `b=0.1`, `minFillRate=1`
-
-### Process the Entire Dataset
-
-To process an entire dataset, use the following command format:
-
-`java -jar 'path_to_jar_file' 'dataset_folder_path' 'output_folder_path' 'runtime' 'num_threads' '1(default)' 'parameter_b_value' 'minFillRate'`
-
-#### Example:
-
-`java -jar C:\out\artifacts\BSGT_jar\BSPAForSet.jar C:\dataset\C C:\Coutcome 30 16 1 0.1 1`
-
-This will process all problems in the `C:\dataset\C` directory, saving the results in the `C:\Coutcome` folder. The algorithm will run for 30 seconds, using 16 parallel threads, with `b=0.1` and `minFillRate=1`.
+This will solve the problem defined in `problem81.txt` located in the `C:\dataset\C` directory. The results will be saved in the `C:\outcome` folder. The algorithm will run for 30 seconds, with `b=0.1`
 
 ## Requirements
 
-- Java 8 
+Java 8 
 
